@@ -11,4 +11,3 @@ function sumir(ID){
 
     opcoes.style.display = "none"
 }
-
