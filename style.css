@@ -169,9 +169,14 @@ header{
 #blocoPrincipal{
     position: absolute;
     /* background-color: aqua; */
-    margin-top: 220px;
-    margin-left: 13%;
-    max-width: 500px;
+    margin-top: 180px;
+    margin-left: 10%;
+    max-width: 600px;
+    height: 400px;
+    padding: 30px;
+    background-color: #00000078;
+    border-radius: 15px;
+    box-shadow:6px 6px 15px #000000;
 }
 
 #bemVindo{
@@ -248,6 +253,7 @@ header{
     width: 80%;
     height: 420px;
     border-radius: 20px;
+    box-shadow: 1px 1px 7px rgb(220, 166, 109);
 }
 
 #blocoHistoria{
