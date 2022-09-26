@@ -5,6 +5,20 @@
     font-family: 'Stint Ultra Condensed', cursive;
 }
 
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #070600c7;
+}
+
+#conteudo{
+    max-width: 1850px;
+}
+
+
+
+
+
 /* Div informativa sobre horário / telefone / instagram */
 #informacao{
     height: 45px;
@@ -56,6 +70,11 @@
 #instagramBorda:hover{
     box-shadow: 2px 2px 15px rgb(192, 163, 34) ;
 }
+
+
+
+
+
 
 /*  Menu de navegação */
 
@@ -119,11 +138,12 @@ header{
 
 /* Dentro do menu. Opçoes dentro de "Sobre" */
 
+
 #opcoesSobre{
     position:absolute;
-    background-color: #1f1f25;
+    background-color: #1f1f25bd;
     height: 120px;
-    padding-top: 20px;
+    padding-top: 18px;
     display: none;
     z-index: 1;
     list-style: none;
@@ -162,6 +182,7 @@ header{
 
 #imagemPrincipal img{
     width: 100%;
+    max-width: 1850px;
     height: 790px;
     position: absolute;
 }
@@ -215,14 +236,18 @@ header{
 }
 
 
+
+
+
+
+
 #sobreMainBrutus{
-    background-color: #191917;
-    color: white;
+    background-color: rgb(233, 233, 233);
+    color: rgb(17, 17, 17);
 
     height: 550px;
     display: flex;
     align-items: center;
-    justify-content: ;
 
 }
 
@@ -250,10 +275,10 @@ header{
 
 
 #SMBimagens img{
-    width: 80%;
-    height: 420px;
+    width: 65%;
+    height: 360px;
     border-radius: 20px;
-    box-shadow: 1px 1px 7px rgb(220, 166, 109);
+    box-shadow: 1px 1px 7px rgb(61, 49, 36);
 }
 
 #blocoHistoria{
@@ -263,13 +288,82 @@ header{
     color: #bf925b;
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
+    text-shadow: 1px 1px 1.5px #1a1a1a ;
 }
 #blocoHistoria h3{
-    /* font-family: 'Poppins', sans-serif; */
     font-size: 55px;
     letter-spacing: 3.5px;
 }
 #blocoHistoria p{
     font-family: 'Poppins', sans-serif;
-    font-size: 17px;
+    font-size: 18px;
+    
 }
+
+
+
+
+
+#sobreMainFuncionarios{
+    height: 650px;
+    background-color:#fcf9f5e7;
+    border-top: 2px solid rgb(212, 212, 212);;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#sobreMainFuncionarios h2{
+        color: #1a1a1a;
+        margin-top: 20px;
+        font-size: 55px;
+        text-shadow:3px 3px 1.5px #ecd5b8;
+
+
+        padding-left: 100px;
+        padding-right: 100px;
+        border-bottom: 2px solid #bf925b;
+}
+
+#SMFfotos{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#sobreMainFuncionarios img{
+    width: 70%;
+    border-radius: 50%;
+}
+
+.barbeiros{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+.barbeiros p{
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+    font-size: 18px;
+    
+}
+
+.barbeiros h3{
+    width: 100%;
+    text-align: center;
+    color: #1a1a1a;
+    margin-top: 8px;
+    font-size: 35px;
+    text-shadow:3px 3px 1.5px #ecd5b8;
+    border-bottom: 2px solid #bf925b;
+    margin-bottom: 10px;
+    
+}
+
+
