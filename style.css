@@ -5,10 +5,14 @@
     font-family: 'Stint Ultra Condensed', cursive;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     display: flex;
     justify-content: center;
-    background-color: #070600c7;
+    background-color: #000000e0;
 }
 
 #conteudo{
@@ -21,7 +25,7 @@ body{
 
 /* Div informativa sobre horário / telefone / instagram */
 #informacao{
-    height: 45px;
+    height: 50px;
     width: 100%;
     background-color: #000000;
     color:rgb(255, 255, 255);
@@ -84,6 +88,9 @@ header{
     background-color: #1f1f25;;
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
     
 }
 /* Logo // com mouse ouver para animar */
@@ -116,7 +123,7 @@ header{
 #head2 a{
     color: rgba(255, 255, 255, 0.774);
     text-decoration: none;
-    padding: 10px;
+    padding: 15px;
 }
 #head2 a:hover{
     color: rgb(255, 255, 255);
@@ -126,27 +133,33 @@ header{
 
 
 #nav{
+    height: 100%;
     width: 100%;
 }
-
 #menu{
     list-style: none;
     display: flex;
     justify-content:space-evenly;
     margin-right:10% ;
+    height: 100%;
+    align-items: center;
 }
+
 
 /* Dentro do menu. Opçoes dentro de "Sobre" */
 
 
+
+
 #opcoesSobre{
     position:absolute;
-    background-color: #1f1f25bd;
-    height: 120px;
-    padding-top: 18px;
+    background-color: #1f1f25f1;
+    height: 100px;
+    padding-top: 5px;
     display: none;
     z-index: 1;
     list-style: none;
+    margin-top: 15px;
 }
 .opcoesSobre:hover{
     background-color: #4d4628c0;
