@@ -48,13 +48,13 @@
         <!-- Menu de navegação -->
 
         <!-- Inserindo a logo da barbearia no canto direito // OnClick vai para o início -->
-        <div id="head1"><a id="logo1"  href="#"><img id="logo" src="./images/Logo.png"></a></div>
+        <div id="MenuGeralEsquerdo"><a id="logo1"  href="#"><img id="logo" src="./images/Logo.png"></a></div>
 
         <!-- Segunda parte do menu navegação onde tem as opçoes para navegar -->
-        <div id="head2">
-            <nav id="nav"> 
+        <div id="MenuGeralDireito">
+            <nav id="MenuNavegavel"> 
                 <!-- Lista das opções -->
-                <ul id="menu">
+                <ul id="MenuPrincipal">
                     <!-- Home para voltar para o início -->
                     <li><a href="#">Home</a></li>
 
@@ -68,15 +68,18 @@
                         </ul>
                     
                     </li>
-
+                    <li><a href="#Cadastros">Cadastro</a></li>
                     <li><a href="/">Serviços</a></li>
                     <li><a href="/">Galeria</a></li>
-                    <li id="agendarNav"><a href="https://bit.ly/agendaBrutusBarbearia">Agendar</a></li>
+                    
+                    <li id="agendarMenu"><a href="https://bit.ly/agendaBrutusBarbearia">Agendar</a></li>
                 </ul>
             </nav>
         </div>
 
     </header>
+
+
 
     <main>
         <div id="principal">
@@ -85,8 +88,8 @@
                 <div id="blocoPrincipal">
 
                     <h4 id="bemVindo">Bem vindo ao BRUTUS</h4>
-                    <h2 id="frase">Aqui barba, cabelo e bigode são coisas sérias</h2>
-                    <a href="https://bit.ly/agendaBrutusBarbearia" id="agende">AGENDE JÁ!</a>
+                    <h2 id="fraseDoPrincipal">Aqui barba, cabelo e bigode são coisas sérias</h2>
+                    <a href="https://bit.ly/agendaBrutusBarbearia" id="agendarPrincipal">AGENDE JÁ!</a>
                 </div>
                 
             </div>
@@ -95,9 +98,9 @@
         <div id="sobreMain">
             <div id="sobreMainBrutus">
 
-                <div id="SMBimagens">
+                <div id="SMBblocoImagem">
 
-                    <div id="SMBfim">
+                    <div id="SMBimagem">
                         <img id="imgFim" src="./images/Fim.jpg">
                     </div>
 
@@ -107,7 +110,7 @@
                     <div id="blocoHistoria">
                         <h5 id="SMBinfo">Sobre Nossa Barbearia</h5>
 
-                        <h3 id="SMBtempo">Com Mais de 6 Anos de Experiencia</h3>
+                        <h3 id="SMBtempo">Com Mais de 6 Anos de Experiência</h3>
 
                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
                     </div>
@@ -121,30 +124,48 @@
 
                 <div id="SMFfotos">
 
-                    <div class="barbeiros">
+                    <div class="barbeirosInformacao">
                         <img src="./Ideias/Barbeiro 4.jpg" id="barbeiro1" >
-                        <h3>Rener Oliveira</h3>
-                        <p>It is a long established fact that a reader will be distracted by the readable  </p>
+                        <h3 class="NomesDosBarbeiros">Rener Oliveira</h3>
+                        <p class="HistoriaDosBarbeiros">It is a long established fact that a reader will be distracted by the readable  </p>
                     </div>
 
-                    <div class="barbeiros"> 
+                    <div class="barbeirosInformacao"> 
                         <img src="./Ideias/Barbeiro 3.jpg" id="barbeiro2" >
-                        <h3>Guilherme Neres</h3>
-                        <p>It is a long established fact that a reader will be distracted by the readable  </p>
+                        <h3 class="NomesDosBarbeiros">Guilherme Neres</h3>
+                        <p class="HistoriaDosBarbeiros">It is a long established fact that a reader will be distracted by the readable  </p>
                     </div>
 
-                    <div class="barbeiros">
+                    <div class="barbeirosInformacao">
                         <img src="./Ideias/Barbeiro 1.jpg" id="barbeiro3" >
-                        <h3>Felipe Gonçalves</h3>
-                        <p>It is a long established fact that a reader will be distracted by the readable  </p>
+                        <h3 class="NomesDosBarbeiros">Felipe Gonçalves</h3>
+                        <p class="HistoriaDosBarbeiros">It is a long established fact that a reader will be distracted by the readable  </p>
                     </div>
 
-                    <div class="barbeiros">
+                    <div class="barbeirosInformacao">
                         <img src="./Ideias/Barbeiro 2.jpg" id="barbeiro4" >
-                        <h3>Guilherme César</h3>
-                        <p>It is a long established fact that a reader will be distracted by the readable  </p>
+                        <h3 class="NomesDosBarbeiros">Guilherme César</h3>
+                        <p class="HistoriaDosBarbeiros"><span id="Cadastros"></span>It is a long established fact that a reader will be distracted by the readable  </p>
                     </div>
+                </div>
+            </div>
+        </div>
 
+        <div id="BlocoCadastro">
+
+            <div id="BlocoCadastroImagem"> <img id="ImagemCadastro" src="./Ideias/aperto-de-mao.jpg" alt="aperto de mao">  </div> 
+
+            <div id="BlocoEnvioDados">
+                <div id="Cadastro">
+
+                    <div id="BlocoCadastroTitulo"><h2 id="CadastroTitulo">Faça um Cadastro Conosco!</h2></div>
+
+                    <div id="CadastroDados">
+                        <div class="Dados"><span>Nome Completo</span><input type="name"></div>
+                        <div class="Dados"><span>E-mail</span><input type="email"></div>
+                        <div class="Dados"><span>Celular</span><input type="tel"></div>
+                        <div id="EnvioDados"><input type="submit"></div>
+                    </div>
                 </div>
             </div>
 
@@ -153,12 +174,10 @@
 
 
 
-
     </main>
 
     
-    <!-- <iframe width="100%" height="900" src="https://www.youtube.com/embed/3pFH7FQu5so" title="Status Barbershop Promo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loop></iframe> -->
-
+   
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </div>
     <script src="./script.js"></script>
