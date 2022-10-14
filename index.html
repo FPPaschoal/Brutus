@@ -14,10 +14,12 @@
 
     <!-- Lincando o css e modificando a aba no site -->
     <link href="./style.css" rel="stylesheet">
+    
     <link href="./images/icons8-tesoura-de-barbeiro-50.png" rel="icon">
     <title>Brutus Barbearia</title>
 
 </head>
+
 <body>
 <div id="conteudo">
     <!-- Div informativa sobre horário / telefone / instagram -->
@@ -44,7 +46,6 @@
 
 
     <header>
-
         <!-- Menu de navegação -->
 
         <!-- Inserindo a logo da barbearia no canto direito // OnClick vai para o início -->
@@ -69,7 +70,7 @@
                     
                     </li>
                     <li><a href="#Cadastros">Cadastro</a></li>
-                    <li><a href="/">Serviços</a></li>
+                    <li><a href="#Serviços">Serviços</a></li>
                     <li><a href="/">Galeria</a></li>
                     
                     <li id="agendarMenu"><a href="https://bit.ly/agendaBrutusBarbearia">Agendar</a></li>
@@ -161,10 +162,11 @@
                     <div id="BlocoCadastroTitulo"><h2 id="CadastroTitulo">Faça um Cadastro Conosco!</h2></div>
 
                     <div id="CadastroDados">
+                        <p>Cadastre-se para receber Cupons, Descontos em Combos, Novidades e Avisos!</p>
                         <div class="Dados"><span>Nome Completo</span><input type="name"></div>
                         <div class="Dados"><span>E-mail</span><input type="email"></div>
                         <div class="Dados"><span>Celular</span><input type="tel"></div>
-                        <div id="EnvioDados"><input type="submit"></div>
+                        <div id="EnvioDados"><input id="Serviços" type="submit"></div>
                     </div>
                 </div>
             </div>
@@ -172,6 +174,64 @@
 
         </div>
 
+
+        <div id="BlocoServicos">
+
+            <div id="ServicosTitulo"><h2 id="TituloServoco">Serviços</h2></div>
+
+            <div id="TodosServicos">
+                <div id="Separador1">
+                        <div class="OpcoesDeCortes">
+                            <div class="NomeServico"><h2>Cabelo</h2></div>
+                            <div class="LimitadorLarguraOpcoesDeCortes">
+                                <div class="ServicoPreco"><p>Corte</p><span>R$45,00</span></div>
+                                <div class="ServicoPreco"><p>Corte Tesoura</p><span>R$50,00</span></div>
+                                <div class="ServicoPreco"><p>Corte Degradê Navalhado</p><span>R$55,00</span></div>
+                                <div class="ServicoPreco"><p>Progressiva</p><span>R$120,00</span></div>
+                            </div>
+                        </div>
+
+                        <div class="OpcoesDeCortes">
+                            <div class="NomeServico"><h2>Rosto</h2></div>
+                            <div class="LimitadorLarguraOpcoesDeCortes">
+                                <div class="ServicoPreco"><p>Barba</p><span>R$45,00</span></div>
+                                <div class="ServicoPreco"><p>Sobrancelha</p><span>R$20,00</span></div>
+                                <div class="ServicoPreco"><p>Depilação Nariz/Orelha com cera quente</p><span>R$20,00</span></div>
+                            </div>
+                        </div>
+
+                </div>
+
+                <div class="OpcoesDeCortes"> 
+                    <div class="NomeServico"><h2>Combos</h2></div>
+
+                       <div id="Separador2"> 
+                        <div class="LimitadorLarguraOpcoesDeCombos">
+                            <div class="ServicoPreco"><p>Cabelo + Barba</p><span>R$85,00</span></div>
+                            <div class="ServicoPreco"><p>Cabelo + Sobrancelha</p><span>R$60,00</span></div>
+                            <div class="ServicoPreco"><p>Cabelo + Barba + Sobrancelha</p><span>R$105,00</span></div>
+                       
+                            <div class="ServicoPreco"><p>Cabelo + Progressiva</p><span>R$160,00</span></div>
+                            <div class="ServicoPreco"><p>Cabelo + Progressiva + Barba</p><span>R$205,00</span></div>
+                            
+                        </div>
+                        
+                         
+                            
+                        <div class="LimitadorLarguraOpcoesDeCombos">
+                            <div class="ServicoPreco"><p>Cabelo Tesoura + Sobrancelha</p><span>R$65,00</span></div>
+                       
+                            <div class="ServicoPreco"><p>Cabelo + Relaxamento/Hidratação</p><span>R$90,00</span></div>
+                            <div class="ServicoPreco"><p>Cabelo + Barba + Relaxamento/Hidratação</p><span>R$135,00</span></div>
+                            <div class="ServicoPreco"><p>Cabelo + Sobrancelha + Depilação Nariz e Orelha</p><span>R$80,00</span></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
 
 
     </main>
