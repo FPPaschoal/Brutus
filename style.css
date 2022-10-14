@@ -385,7 +385,7 @@ header{
 
 #BlocoCadastro{
 
-    height: 450px;
+    height: 530px;
     width: 100%;
 
     background-image: url(./Ideias/satellite-map.png);
@@ -399,11 +399,11 @@ header{
 
 
 #BlocoCadastroImagem{
-    width: 60%;
+    width: 70%;
 }
 #ImagemCadastro{
     margin-top: 4px;
-    height: 450px;
+    height: 530px;
     width: 100%;
 }
 
@@ -418,7 +418,7 @@ header{
 }
 #Cadastro{
     height: 100%;
-    width: 60%;
+    width: 75%;
     display: flex;
     align-items: center;
     flex-direction: column;   
@@ -433,8 +433,8 @@ header{
     font-size: 63px;
     color: rgb(233, 233, 233);
     text-shadow:2px 3px 10px #1a1a1a;
-    margin-bottom: 25px;
-    margin-top: 15px;
+    margin-bottom: 1px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -444,7 +444,15 @@ header{
 #CadastroDados{
     width: 80%;
     height: 100%;
+    margin-bottom: 10px;
 }
+#CadastroDados p{
+    font-size: 32px;
+    color: #b2b2b2;
+    margin-top: -8px;
+    margin-bottom: 5px;
+}
+
 .Dados{
     display: flex;
     flex-direction: column;
@@ -453,7 +461,7 @@ header{
     text-shadow: 3px 3px 3px #5b551dda;
 }
 .Dados input{
-    height: 38px;
+    height: 45px;
     font-size: 20px;
     padding: 5px;
     font-family: initial;
@@ -472,8 +480,8 @@ header{
     justify-content: flex-end;
 }
 #EnvioDados input{
-    height: 40px;
-    width: 30%;
+    height: 45px;
+    width: 25%;
     font-size: 25px;
     font-family:initial;
     color: #906812;
@@ -487,4 +495,99 @@ header{
     color: #000000;
 }
 
+
+
+
+
+#BlocoServicos{
+    background-color: rgb(233, 233, 233);
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+#ServicosTitulo{
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#TituloServoco{
+    font-size: 55px;
+    text-shadow: 3px 3px 1.5px #ecd5b8;
+    color: #1a1a1a;
+}
+
+#TodosServicos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#Separador1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: -10px;
+    
+}
+.NomeServico{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.NomeServico h2{
+    font-size: 45px;
+    text-shadow: 2px 2px 5px #c2c2c2;
+}
+.OpcoesDeCortes{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.LimitadorLarguraOpcoesDeCortes{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ServicoPreco{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 5px;
+    border:3px #473b21cc;
+    border-bottom-style: dashed;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+.ServicoPreco p{
+    font-size: 19.8px;
+    font-family: initial;
+
+}
+
+.ServicoPreco span{
+    font-size: 20px;
+    font-family: initial;
+}
+
+#Separador2{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.LimitadorLarguraOpcoesDeCombos{
+    width: 47.5%;
+}
 
