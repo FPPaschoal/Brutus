@@ -39,20 +39,23 @@ body{
 #informacao a{
     color: white;
     text-decoration: none;
-    
+    font-size: 1.5rem;
+}
+#horario a{
+    font-size: 2rem;
 }
 
 #horario{
     display: flex;
     width: 100%;
-    list-style-image: url(./images/icons8-intervalo-de-tempo-25.png);
+    list-style-image: url(./images/icons/Icon\ time.png);
     justify-content: center;
     
 }
 
 #telefone{
     width: 100%;
-    list-style-image: url(./images/icons8-call-squared-25.png);
+    list-style-image: url(./images/icons/Icon\ tell.png);
     display: flex;
     justify-content: center;
    
@@ -67,7 +70,7 @@ body{
     width: 100%;
     
     font-size: 25px;
-    list-style-image: url(./images/icons8-instagram-25.png); 
+    list-style-image: url(./images/icons/Icon\ insta\ 2.png); 
 }
 #instagramBorda{
     border: 2px  solid rgb(255, 255, 255);
@@ -218,7 +221,7 @@ header{
 
 #bemVindo{
     color: #bf925b;
-    font-size: 40px;
+    font-size: 3rem;
     padding: 8px;
     text-shadow: 2px 2px 2px #1f1f25;
     text-decoration: underline;
@@ -330,7 +333,7 @@ header{
 #sobreMainFuncionarios h2{
         color: #1a1a1a;
         margin-top: 20px;
-        font-size: 55px;
+        font-size: 4rem;
         text-shadow:3px 3px 1.5px #ecd5b8;
 
 
@@ -388,7 +391,7 @@ header{
     height: 530px;
     width: 100%;
 
-    background-image: url(./Ideias/satellite-map.png);
+    background-image: url(./images/Cadastro/Fundo.png);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -513,7 +516,7 @@ header{
     justify-content: center;
 }
 #TituloServoco{
-    font-size: 55px;
+    font-size: 4rem;
     text-shadow: 3px 3px 1.5px #ecd5b8;
     color: #1a1a1a;
 }
@@ -540,7 +543,7 @@ header{
     justify-content: center;
 }
 .NomeServico h2{
-    font-size: 45px;
+    font-size: 3rem;
     text-shadow: 2px 2px 5px #c2c2c2;
 }
 .OpcoesDeCortes{
@@ -591,3 +594,162 @@ header{
     width: 47.5%;
 }
 
+
+
+
+
+.GaleriaPrincipal{
+    width: 100%;
+    padding: 2rem;
+    height: 100%;
+    background-color: #fcf9f5e7;
+    border-top: 2px solid rgb(212, 212, 212);
+}
+#GaleriaTitulo{
+    width: 100%;
+    margin-top: -0.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #1a1a1a;
+    font-size: 4rem;
+    text-shadow: 3px 3px 1.5px #ecd5b8;
+}
+.Galeria{
+    display: grid;
+    grid-template-columns:  repeat(10, 1fr);
+    grid-template-rows: repeat(10, 2.8vw);
+    gap: 0.5rem;
+    padding-bottom: 50px;
+}
+.Galeria img{
+    transition: 0.5s;
+    border: 5px solid #8d6b41;
+    border-radius: 5px;
+}
+.Galeria img:hover{
+    transform: scale(1.2);
+}
+.imgGaleria{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    display: block;
+}
+/* .ItemGaleria{
+     overflow: hidden;
+} */
+
+.ItemGaleria01{
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 5;
+}
+.ItemGaleria02{
+    grid-column: 4 / span 4;
+    grid-row: 1 / span 5;
+}
+.ItemGaleria03{
+    grid-column: 2 / span 3;
+    grid-row: 6 / span 5;
+}
+.ItemGaleria04{
+    grid-column: 5 / span 3;
+    grid-row: 6 / span 5;
+}
+.ItemGaleria05{
+    grid-column: 8 / span 2;
+    grid-row: 1 / span 10;
+}
+
+
+
+
+footer{
+    background-color: rgb(22, 22, 19);
+    width: 100%;
+    padding-top: 50px;
+}
+#Footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+#Mapa{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Mapa iframe{
+    width: 80%;
+    height: 250px;
+}
+
+#Horarios{
+    width: 60%;
+}
+#Horarios h2{
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: center;
+    font-family: initial;
+
+}
+#Horarios ul{
+    color: #ffffff;
+    font-size: 1.5rem;
+    list-style-type: none;
+    list-style-position:inside;
+}
+#SeparaHorario{
+    display: flex;
+    justify-content: space-around;
+}
+
+#Social{
+    width: 100%;
+    height: 100%;
+
+}
+#Social img{
+    width: 30%;
+    max-height: 125px;
+    margin-left: 36%;
+}
+#Social p{
+    color: rgb(255, 255, 255);
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    font-size: 1.5rem;
+    text-shadow: 2px 3px 10px #c0c0c086;
+}
+#Social ul{
+    list-style-type: none;
+    display: inline;
+    margin-left: 15%;
+}
+#Social li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 12%;
+    
+}
+#Social ul img{
+    height: 40px;
+    width: 40px;
+}
+
+#Creditos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    border-top:3px solid #313131 ;
+}
+#Creditos a{
+    color: #ffffff;
+    font-size: 1.3rem;
+}
