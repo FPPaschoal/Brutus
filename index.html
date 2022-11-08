@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Procura Google -->
+    <meta name="description" content=" ----------------------Descrição----------------------" />
+    <meta name="keywords" content="barbearia, Brutus barba, barba, cabelo, barbearia brutus, franquia de barbearia, brutus, brutus barbearia, brutos, barbearia vip, barbearia premium, barbearia de luxo, barbearia masculina, barbearia sao paulo, barbearia campinas, barbearia limeira, barbearia piracicaba, barbearia nova iguaçu, barbearia ribeirão preto, barberia sertãozinho, barberia cravinhos, barberia pontal, barberia prodópolis, barberia brodowski, barbearia batatais, barbearia serra azul" />
+
     <!-- Pegando a fonte que será usada -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     <!-- Lincando o css e modificando a aba no site -->
     <link href="./style.css" rel="stylesheet">
     
-    <link href="./images/icons8-tesoura-de-barbeiro-50.png" rel="icon">
+    <link href="./images/icons/Icon head.png" rel="icon">
     <title>Brutus Barbearia</title>
 
 </head>
@@ -27,7 +32,7 @@
 
             <div id="horario">
                 <ul>
-                    <li>Seg - Sab // 9.00 : 19.00</li>
+                    <li><a href="#Horarios">Horário</a></li>
                 </ul>
             </div>
             <div id="telefone">
@@ -60,18 +65,18 @@
                     <li><a href="#">Home</a></li>
 
                     <!-- Sobre informativo // Utilizo funções para mostrar as opções dentro de "Sobre" -->
-                    <li><a onmouseover="mostrar('opcoesSobre')" onmouseleave="sumir('opcoesSobre')" id="Sobre" href="#sobreMain">Sobre</a>
+                    <li><a onmouseover="mostrar('opcoesSobre')" onmouseleave="sumir('opcoesSobre')" id="Sobre" href="#SobreBarbearia">Sobre</a>
                         <ul onmouseover="mostrar('opcoesSobre')" onmouseleave="sumir('opcoesSobre')" id="opcoesSobre">
 
-                            <li class="opcoesSobre"><a href="#sobreMainBrutus">Sobre Barbearia</a></li>
-                            <li class="opcoesSobre"><a href="#sobreMainFuncionarios">Sobre Nós</a></li>
+                            <li class="opcoesSobre"><a href="#SobreBarbearia">Sobre Barbearia</a></li>
+                            <li class="opcoesSobre"><a href="#SobreNos">Sobre Nós</a></li>
 
                         </ul>
                     
                     </li>
                     <li><a href="#Cadastros">Cadastro</a></li>
                     <li><a href="#Serviços">Serviços</a></li>
-                    <li><a href="/">Galeria</a></li>
+                    <li><a href="#Galeria">Galeria</a></li>
                     
                     <li id="agendarMenu"><a href="https://bit.ly/agendaBrutusBarbearia">Agendar</a></li>
                 </ul>
@@ -85,7 +90,7 @@
     <main>
         <div id="principal">
             <div id="imagemPrincipal">
-                <img src="./images/Fundo.webp">
+                <img src="./images/BemVindo/Fundo.webp">
                 <div id="blocoPrincipal">
 
                     <h4 id="bemVindo">Bem vindo ao BRUTUS</h4>
@@ -97,12 +102,13 @@
         </div>
 
         <div id="sobreMain">
+            <span id="SobreBarbearia"></span>
             <div id="sobreMainBrutus">
 
                 <div id="SMBblocoImagem">
 
                     <div id="SMBimagem">
-                        <img id="imgFim" src="./images/Fim.jpg">
+                        <img id="imgFim" src="./images/Sobre/Img Sobre.jpg">
                     </div>
 
                 </div>
@@ -115,6 +121,7 @@
 
                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
                     </div>
+                    <span id="SobreNos"></span>
                 </div>
 
             </div>
@@ -126,25 +133,25 @@
                 <div id="SMFfotos">
 
                     <div class="barbeirosInformacao">
-                        <img src="./Ideias/Barbeiro 4.jpg" id="barbeiro1" >
+                        <img src="./images/Barbeiros/Barbeiro 4.jpg" id="barbeiro1" >
                         <h3 class="NomesDosBarbeiros">Rener Oliveira</h3>
                         <p class="HistoriaDosBarbeiros">It is a long established fact that a reader will be distracted by the readable  </p>
                     </div>
 
                     <div class="barbeirosInformacao"> 
-                        <img src="./Ideias/Barbeiro 3.jpg" id="barbeiro2" >
+                        <img src="./images/Barbeiros/Barbeiro 3.jpg" id="barbeiro2" >
                         <h3 class="NomesDosBarbeiros">Guilherme Neres</h3>
                         <p class="HistoriaDosBarbeiros">It is a long established fact that a reader will be distracted by the readable  </p>
                     </div>
 
                     <div class="barbeirosInformacao">
-                        <img src="./Ideias/Barbeiro 1.jpg" id="barbeiro3" >
+                        <img src="./images/Barbeiros/Barbeiro 1.jpg" id="barbeiro3" >
                         <h3 class="NomesDosBarbeiros">Felipe Gonçalves</h3>
                         <p class="HistoriaDosBarbeiros">It is a long established fact that a reader will be distracted by the readable  </p>
                     </div>
 
                     <div class="barbeirosInformacao">
-                        <img src="./Ideias/Barbeiro 2.jpg" id="barbeiro4" >
+                        <img src="./images/Barbeiros/Barbeiro 2.jpg" id="barbeiro4" >
                         <h3 class="NomesDosBarbeiros">Guilherme César</h3>
                         <p class="HistoriaDosBarbeiros"><span id="Cadastros"></span>It is a long established fact that a reader will be distracted by the readable  </p>
                     </div>
@@ -154,7 +161,7 @@
 
         <div id="BlocoCadastro">
 
-            <div id="BlocoCadastroImagem"> <img id="ImagemCadastro" src="./Ideias/aperto-de-mao.jpg" alt="aperto de mao">  </div> 
+            <div id="BlocoCadastroImagem"> <img id="ImagemCadastro" src="./images/Cadastro/Img Cadastro.jpg" alt="aperto de mao">  </div> 
 
             <div id="BlocoEnvioDados">
                 <div id="Cadastro">
@@ -163,9 +170,9 @@
 
                     <div id="CadastroDados">
                         <p>Cadastre-se para receber Cupons, Descontos em Combos, Novidades e Avisos!</p>
-                        <div class="Dados"><span>Nome Completo</span><input type="name"></div>
-                        <div class="Dados"><span>E-mail</span><input type="email"></div>
-                        <div class="Dados"><span>Celular</span><input type="tel"></div>
+                        <div class="Dados"><span>Nome Completo</span><input type="name" required></div>
+                        <div class="Dados"><span>E-mail</span><input type="email" required></div>
+                        <div class="Dados"><span>Celular</span><input type="tel" required></div>
                         <div id="EnvioDados"><input id="Serviços" type="submit"></div>
                     </div>
                 </div>
@@ -215,9 +222,7 @@
                             <div class="ServicoPreco"><p>Cabelo + Progressiva + Barba</p><span>R$205,00</span></div>
                             
                         </div>
-                        
-                         
-                            
+      
                         <div class="LimitadorLarguraOpcoesDeCombos">
                             <div class="ServicoPreco"><p>Cabelo Tesoura + Sobrancelha</p><span>R$65,00</span></div>
                        
@@ -225,21 +230,106 @@
                             <div class="ServicoPreco"><p>Cabelo + Barba + Relaxamento/Hidratação</p><span>R$135,00</span></div>
                             <div class="ServicoPreco"><p>Cabelo + Sobrancelha + Depilação Nariz e Orelha</p><span>R$80,00</span></div>
                         </div>
-                    </div>
+                    </div><span id="Galeria"></span>
                 </div>
-
             </div>
+        </div>
 
+        
+        <div class="GaleriaPrincipal">
+
+            <h2 id="GaleriaTitulo">Galeria</h2>
+                <section class="Galeria">
+                    <figure class="ItemGaleria ItemGaleria01">
+                        <img src="./images/Galeria/Imagem 1.jpg" alt="Imagem Barba" class="imgGaleria">
+                    </figure>
+                    <figure class="ItemGaleria ItemGaleria02">
+                        <img src="./images/Galeria/Imagem 2.jpg" alt="Corte Degradê Navalhado" class="imgGaleria">
+                    </figure>
+                    <figure class="ItemGaleria ItemGaleria03">
+                        <img src="./images/Galeria/Imagem 3.jpg" alt="Corte Tesoura e Maquina" class="imgGaleria">
+                    </figure>
+                    <figure class="ItemGaleria ItemGaleria04">
+                        <img src="./images/Galeria/Imagem 4.jpg" alt="Barba 2" class="imgGaleria">
+                    </figure>
+                    <figure class="ItemGaleria ItemGaleria05">
+                        <img src="./images/Galeria/Imagem 5.jpg" alt="Corte Tesoura 2" class="imgGaleria">
+                    </figure>
+                </section>
 
         </div>
 
-
     </main>
 
+    <footer>
+        <div id="Footer">
+
+            <div id="Mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1508.4761525914162!2d-47.80303435609567!3d-21.205209280881903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9bf2a8dd06bc7%3A0xd7df8e239a376c47!2sBrutus%20Barbearia!5e0!3m2!1spt-BR!2sbr!4v1667862474454!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <div id="Horarios">
+                <h2>Horarios</h2>
+                <div id="SeparaHorario">
+                    <div>
+                        <ul>
+                            <li>Segunda-Feira</li>
+                            <li>Terça-Feira</li>
+                            <li>Quarta-Feira</li>
+                            <li>Quinta-Feira</li>
+                            <li>Sexta-Feira</li>
+                            <li>Sábado</li>
+                            <li>Domingo</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>14:00–20:00</li>
+                            <li>09:00–20:00</li>
+                            <li>09:00–20:00</li>
+                            <li>09:00–20:00</li>
+                            <li>09:00–20:00</li>
+                            <li>08:30–18:00</li>
+                            <li>FECHADO</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="Social">
+
+                <img src="./images/Logo.png">
+                <p>Nossa barbearia é criada para homens que apreciam qualidade premium, tempo e visual impecável. Pois, quando o assunto é barbearia, levamos o trabalho muito a sério!</p>
+                <br>
+                <ul>
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=5516992832380" target="_blank"><img src="./images/icons/Icon Whats.png"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/brutus_barbearia_rp/" target="_blank"><img src="./images/icons/Icon Insta.png"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/BrutusBarbeariaRP/" target="_blank"><img src="./images/icons/Icon Facebook.png"></a>
+                    </li>
+                </ul>
+            </div>
+          
+        </div>
+
+
+
+        <div id="Creditos">
+            <div id="Desenvolvido">
+                <a href="https://www.linkedin.com/in/fppaschoal/" target="_blank">© 2022 Desenvolvido por Felipe Paschoal</a>    
+            </div>
+            
+            <div id="Problema">
+                <a href="https://api.whatsapp.com/send?phone=5516992832380" target="_blank">Relatar Problema</a>
+            </div>
+        </div>
+    </footer>
     
-   
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-</div>
-    <script src="./script.js"></script>
+   </div>
+<script src="./script.js"></script>
 </body>
 </html>
